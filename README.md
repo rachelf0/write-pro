@@ -36,18 +36,18 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - [Questions](#questions)
 
 ## Installation
-'npm init'
-'npm install node'
-'npm install express'
-'npm install jest --save-dev'
-'heroku create'
+`npm init`
+`npm install node`
+`npm install express`
+`npm install jest --save-dev`
+`heroku create`
 
 ## Usage
 Run the following command at the root of your project and answer the prompted questions:
-'npm start'
+`npm start`
 
 ## Testing
-'npm install jest --save-dev'
+`npm install jest --save-dev`
 
 ## Contributing
 Rachel Fritz
