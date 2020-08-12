@@ -48,6 +48,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Usage
 Run the following command at the root of your project and answer the prompted questions:
+
 `npm start`
 
 ## Testing
