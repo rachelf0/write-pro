@@ -37,9 +37,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 ## Installation
 `npm init`
+
 `npm install node`
+
 `npm install express`
+
 `npm install jest --save-dev`
+
 `heroku create`
 
 ## Usage
