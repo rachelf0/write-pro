@@ -4,7 +4,7 @@
   "description": "## Description A node.js express.js application that uses user input to create, store and delte notes.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/rachelf0/write-pro/issues"
   },
-  "homepage": "https://github.com/rachelf0/write-pro#readme"
+  "homepage": "https://github.com/rachelf0/write-pro#readme",
+  "devDependencies": {
+    "jest": "^26.4.0"
+  }
 }

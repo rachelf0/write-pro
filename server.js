@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 3001;
 // creates the server
 const app = express();
 
+// the following 2 parts are necessary for all server.js files in order for routes to work
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
-
 // parse incoming JSON data
 app.use(express.json());
 
