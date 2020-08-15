@@ -1,25 +1,21 @@
-const express = require('express');
-// creates the server
+// require dependencies
+const express = require("express");
+const fs = require("fs");
+const path = require('path');
+
+// Initialize express app
 const app = express();
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
-// creates the server port reservation
-const PORT = process.env.PORT || 3001;
-// the following 2 parts are necessary for all server.js files in order for routes to work
+const PORT = process.env.PORT || 3000;
+
+// Setup data parsing
 app.use(express.urlencoded({ extended: true }));
-// parse incoming JSON data
 app.use(express.json());
+app.use(express.static(__dirname));
 
-// serve static
-app.use(express.static('public'));
+//Require routes file
+require('./routes/routes')(app);
 
-// server uses /api to access apiroutes
-app.use('/api', apiRoutes);
-
-// server uses /api to access htmlroutes
-app.use('/', htmlRoutes);
-
-// server listens on dynamic port ,3001 locally, or 80 on Heroku
-app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
-  });
+// Setup listener
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
+}); 
