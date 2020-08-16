@@ -31,7 +31,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Testing](#testing)
   - [Contributing](#contributing)
   - [Questions](#questions)
 
@@ -50,9 +49,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 Run the following command at the root of your project and answer the prompted questions:
 
 `npm start`
-
-## Testing
-`npm install jest --save-dev`
 
 ## Contributing
 Rachel Fritz
